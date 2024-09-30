@@ -1,0 +1,303 @@
+version: "3.1"
+
+nlu:
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - salut
+    - bonjour
+    - bonsoir
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - Etes vous un assistant?
+    - Who are you?
+    - Qui es tu? 
+    - Coucou
+
+- intent: plateforme_sms
+  examples: |
+    - Est-ce que la plateforme permet l'envoi de SMS uniquement vers les numéros Mobilis ?
+    - Est-il possible d'envoyer des SMS uniquement vers les numéros Mobilis ?
+    - Est-il possible d'envoyer des SMS vers d'autres opérateurs ?
+    - Est-il possible d'envoyer des SMS vers l'opérateur Ooredoo ?
+    - Est-il possible d'envoyer des SMS vers l'opérateur Djezzy ?
+    - Est-il possible d'envoyer des SMS vers les numéros étrangers ?
+    - Est-il possible d'envoyer des SMS vers les numéros hors l'Algérie ?
+- intent: acceder_transactions
+  examples: |
+    - Comment puis-je accéder à mes transactions passées et à mes factures ?
+    - Comment puis-je accéder à mes factures ?
+- intent: support_technique
+  examples: |
+    - J'ai un problème technique, que dois-je faire ?
+    - Que dois-je faire en cas de problème technique ou si j'ai besoin d'aide ?
+- intent: acceder_compte
+  examples: |
+    - Comment puis-je accéder à mon compte sur la plateforme ?
+    - Quelle est la méthode pour me connecter à mon compte sur la plateforme ?
+- intent: renouveler_paiement
+  examples: |
+    - Comment puis-je renouveler mon paiement ?
+    - Quelle est la démarche à suivre pour renouveler mon paiement ?
+- intent: suivre_etat_envois
+  examples: |
+    - Comment puis-je suivre l'état de mes envois de SMS ?
+    - Où puis-je vérifier le statut de mes SMS envoyés ?
+- intent: assistance_supp
+  examples: |
+    - Que faire si j'ai besoin d'assistance supplémentaire ?
+    - Comment puis-je obtenir de l'aide supplémentaire si nécessaire ?
+
+- intent: proposition_modeles_sms
+  examples: |
+    - Pouvez-vous me proposer des modèles de SMS pour une campagne marketing ?
+    - J'ai besoin d'exemples de SMS pour mes clients, pouvez-vous m'aider ?
+    - Pourriez-vous suggérer des modèles de messages SMS ?
+    - J'aimerais avoir des idées de messages SMS pour mes promotions.
+    - Avez-vous des modèles de SMS que je pourrais utiliser ?
+    - Pouvez-vous fournir des exemples de SMS pour mes envois ?
+    - Quelles sont vos suggestions pour des SMS à envoyer aux clients ? 
+    - Propose moi des modèles de SMS en général ?   
+
+- intent: proposition_modeles_sms_rh
+  examples: |
+    - Pouvez-vous me proposer des modèles de SMS pour le département RH ?
+    - J'ai besoin d'exemples de SMS pour les ressources humaines, pouvez-vous m'aider ?
+    - Pourriez-vous suggérer des modèles de messages SMS pour RH ?
+    - J'aimerais avoir des idées de messages SMS pour des annonces RH.
+    - Avez-vous des modèles de SMS pour le recrutement ?
+    - Pouvez-vous fournir des exemples de SMS pour la gestion du personnel ?
+
+- intent: proposition_modeles_sms_reunions
+  examples: |
+    - Pouvez-vous me proposer des modèles de SMS pour des réunions ?
+    - J'ai besoin d'exemples de SMS pour inviter à des réunions, pouvez-vous m'aider ?
+    - Pourriez-vous suggérer des modèles de messages SMS pour des réunions d'affaires ?
+    - J'aimerais avoir des idées de messages SMS pour organiser des réunions.
+    - Avez-vous des modèles de SMS pour des convocations de réunions ?
+    - Pouvez-vous fournir des exemples de SMS pour rappeler une réunion ?
+
+- intent: proposition_modeles_sms_partenaires
+  examples: |
+    - Pouvez-vous me proposer des modèles de SMS pour des partenaires commerciaux ?
+    - J'ai besoin d'exemples de SMS pour nos partenaires, pouvez-vous m'aider ?
+    - Pourriez-vous suggérer des modèles de messages SMS pour nos partenaires ?
+    - J'aimerais avoir des idées de messages SMS pour communiquer avec nos partenaires.
+    - Avez-vous des modèles de SMS pour les relations avec les partenaires ?
+
+- intent: proposition_modeles_sms_fidelite
+  examples: |
+    - Pouvez-vous me proposer des modèles de SMS pour la fidélisation des clients ?
+    - J'ai besoin d'exemples de SMS pour fidéliser mes clients, pouvez-vous m'aider ?
+    - Pourriez-vous suggérer des modèles de messages SMS pour la fidélité client ?
+    - J'aimerais avoir des idées de messages SMS pour des programmes de fidélité.
+    - Avez-vous des modèles de SMS pour remercier les clients fidèles ?
+    - Pouvez-vous fournir des exemples de SMS pour encourager la fidélité des clients ?
+
+- intent: proposition_modeles_sms_sous_dg
+  examples: |
+    - Pouvez-vous me proposer des modèles de SMS pour le sous-directeur général ?
+    - J'ai besoin d'exemples de SMS pour le sous-DG, pouvez-vous m'aider ?
+    - Pourriez-vous suggérer des modèles de messages SMS pour le sous-DG ?
+    - J'aimerais avoir des idées de messages SMS pour le sous-directeur général.
+    - Avez-vous des modèles de SMS pour communiquer avec le sous-DG ?
+    - Pouvez-vous fournir des exemples de SMS pour le sous-directeur général ?
+
+- intent: proposition_modeles_sms_promotions
+  examples: |
+    - Pouvez-vous me proposer des modèles de SMS pour des promotions ?
+    - J'ai besoin d'exemples de SMS pour des promotions, pouvez-vous m'aider ?
+    - Pourriez-vous suggérer des modèles de messages SMS pour des offres promotionnelles ?
+    - J'aimerais avoir des idées de messages SMS pour des promotions spéciales.
+    - Avez-vous des modèles de SMS pour annoncer des promotions ?
+    - Pouvez-vous fournir des exemples de SMS pour des campagnes promotionnelles ?
+
+- intent: proposition_modeles_sms_evenements
+  examples: |
+    - Pouvez-vous me proposer des modèles de SMS pour des événements ?
+    - J'ai besoin d'exemples de SMS pour des événements, pouvez-vous m'aider ?
+    - Pourriez-vous suggérer des modèles de messages SMS pour des invitations à des événements ?
+    - J'aimerais avoir des idées de messages SMS pour annoncer des événements.
+    - Avez-vous des modèles de SMS pour des événements spéciaux ?
+    - Pouvez-vous fournir des exemples de SMS pour des invitations à des événements ?
+
+- intent: proposition_modeles_sms_rappels
+  examples: |
+    - Pouvez-vous me proposer des modèles de SMS pour des rappels ?
+    - J'ai besoin d'exemples de SMS pour des rappels, pouvez-vous m'aider ?
+    - Pourriez-vous suggérer des modèles de messages SMS pour rappeler des rendez-vous ?
+    - J'aimerais avoir des idées de messages SMS pour des rappels de paiement.
+    - Avez-vous des modèles de SMS pour rappeler des échéances ?
+    - Pouvez-vous fournir des exemples de SMS pour des rappels importants ?
+
+- intent: proposition_modeles_sms_remerciements
+  examples: |
+    - Pouvez-vous me proposer des modèles de SMS pour des remerciements ?
+    - J'ai besoin d'exemples de SMS pour remercier mes clients, pouvez-vous m'aider ?
+    - Pourriez-vous suggérer des modèles de messages SMS pour exprimer ma gratitude ?
+    - J'aimerais avoir des idées de messages SMS pour remercier des partenaires.
+    - Avez-vous des modèles de SMS pour des remerciements après un événement ?
+    - Pouvez-vous fournir des exemples de SMS pour des messages de remerciement ?
+
+- intent: proposition_modeles_sms_annonces
+  examples: |
+    - Pouvez-vous me proposer des modèles de SMS pour des annonces ?
+    - J'ai besoin d'exemples de SMS pour des annonces importantes, pouvez-vous m'aider ?
+    - Pourriez-vous suggérer des modèles de messages SMS pour des annonces d'entreprise ?
+    - J'aimerais avoir des idées de messages SMS pour annoncer des nouveautés.
+    - Avez-vous des modèles de SMS pour des annonces internes ?
+    - Pouvez-vous fournir des exemples de SMS pour des annonces officielles ?
+
+- intent: proposition_modeles_sms_conges
+  examples: |
+    - Pouvez-vous me proposer des modèles de SMS pour annoncer des congés ?
+    - J'ai besoin d'exemples de SMS pour informer sur des congés, pouvez-vous m'aider ?
+    - Pourriez-vous suggérer des modèles de messages SMS pour annoncer des vacances ?
+    - J'aimerais avoir des idées de messages SMS pour informer des périodes de congé.
+    - Avez-vous des modèles de SMS pour annoncer des fermetures pour congés ?
+    - Pouvez-vous fournir des exemples de SMS pour des messages de congé ?
+
+- intent: proposition_modeles_sms_urgences
+  examples: |
+    - Pouvez-vous me proposer des modèles de SMS pour des situations d'urgence ?
+    - J'ai besoin d'exemples de SMS pour des urgences, pouvez-vous m'aider ?
+    - Pourriez-vous suggérer des modèles de messages SMS pour des alertes d'urgence ?
+    - J'aimerais avoir des idées de messages SMS pour des situations urgentes.
+    - Avez-vous des modèles de SMS pour des notifications d'urgence ?
+    - Pouvez-vous fournir des exemples de SMS pour des alertes immédiates ?
+
+- intent: proposition_modeles_sms_bienvenue
+  examples: |
+    - Pouvez-vous me proposer des modèles de SMS pour souhaiter la bienvenue ?
+    - J'ai besoin d'exemples de SMS pour accueillir de nouveaux clients, pouvez-vous m'aider ?
+    - Pourriez-vous suggérer des modèles de messages SMS pour souhaiter la bienvenue à des nouveaux employés ?
+    - J'aimerais avoir des idées de messages SMS pour accueillir de nouveaux membres.
+    - Avez-vous des modèles de SMS pour des messages de bienvenue ?
+    - Pouvez-vous fournir des exemples de SMS pour des messages d'accueil ?
+
+- intent: proposition_modeles_sms_remerciements_collaboration
+  examples: |
+    - Pouvez-vous me proposer des modèles de SMS pour remercier pour une collaboration ?
+    - J'ai besoin d'exemples de SMS pour exprimer ma gratitude pour une collaboration, pouvez-vous m'aider ?
+    - Pourriez-vous suggérer des modèles de messages SMS pour remercier des collaborateurs ?
+    - J'aimerais avoir des idées de messages SMS pour des remerciements après une collaboration.
+    - Avez-vous des modèles de SMS pour des messages de gratitude après une collaboration ?
+    - Pouvez-vous fournir des exemples de SMS pour des remerciements de collaboration ?
+
+- intent: proposition_modeles_sms_anniversaire
+  examples: |
+    - Pouvez-vous me proposer des modèles de SMS pour souhaiter un anniversaire ?
+    - J'ai besoin d'exemples de SMS pour des messages d'anniversaire, pouvez-vous m'aider ?
+    - Pourriez-vous suggérer des modèles de messages SMS pour des anniversaires de clients ?
+    - J'aimerais avoir des idées de messages SMS pour souhaiter un anniversaire à un collègue.
+    - Avez-vous des modèles de SMS pour des anniversaires ?
+    - Pouvez-vous fournir des exemples de SMS pour des souhaits d'anniversaire ?
+
+- intent: proposition_modeles_sms_lancements
+  examples: |
+    - Pouvez-vous me proposer des modèles de SMS pour des lancements de produit ?
+    - J'ai besoin d'exemples de SMS pour annoncer des lancements, pouvez-vous m'aider ?
+    - Pourriez-vous suggérer des modèles de messages SMS pour des lancements de service ?
+    - J'aimerais avoir des idées de messages SMS pour annoncer un nouveau produit.
+    - Avez-vous des modèles de SMS pour des annonces de lancement ?
+    - Pouvez-vous fournir des exemples de SMS pour des messages de lancement ?
+
+- intent: proposition_modeles_sms_feedback
+  examples: |
+    - Pouvez-vous me proposer des modèles de SMS pour demander des feedbacks ?
+    - J'ai besoin d'exemples de SMS pour solliciter des retours, pouvez-vous m'aider ?
+    - Pourriez-vous suggérer des modèles de messages SMS pour demander des avis clients ?
+    - J'aimerais avoir des idées de messages SMS pour recueillir des feedbacks.
+    - Avez-vous des modèles de SMS pour demander des retours d'expérience ?
+    - Pouvez-vous fournir des exemples de SMS pour solliciter des feedbacks ?
+
+- intent: demande_import_contacts
+  examples: |
+    - Comment importer la liste des contacts ?
+    - Pouvez-vous m'expliquer comment importer des contacts ?
+    - J'aimerais importer une liste de contacts, comment faire ?
+    - Où puis-je trouver l'option pour importer une liste de contacts ?
+    - Comment ajouter plusieurs contacts à la fois depuis un fichier CSV ?
+    - Pourriez-vous me montrer comment uploader un fichier CSV pour les contacts ?
+    - J'ai besoin d'aide pour importer mes contacts depuis un fichier CSV.    
