@@ -1,0 +1,135 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Plateforme SMS
+  steps:
+  - intent: plateforme_sms
+  - action: utter_plateforme_sms
+- story: Accéder Transactions
+  steps:
+  - intent: acceder_transactions
+  - action: utter_acceder_transactions
+- story: Support Technique
+  steps:
+  - intent: support_technique
+  - action: utter_support_technique
+- story: Accéder Compte
+  steps:
+  - intent: acceder_compte
+  - action: utter_acceder_compte
+- story: Proposition Modèles SMS
+  steps:
+  - intent: proposition_modeles_sms
+  - action: utter_proposition_modeles_sms  
+- story: Renouveler Paiement
+  steps:
+  - intent: renouveler_paiement
+  - action: utter_renouveler_paiement
+- story: Suivre État Envois
+  steps:
+  - intent: suivre_etat_envois
+  - action: utter_suivre_etat_envois
+- story: Assistance Supplémentaire
+  steps:
+  - intent: assistance_supp
+  - action: utter_assistance_supp
+- story: Proposition Modèles SMS RH
+  steps:
+  - intent: proposition_modeles_sms_rh
+  - action: utter_proposition_modeles_sms_rh
+- story: Proposition Modèles SMS Réunions
+  steps:
+  - intent: proposition_modeles_sms_reunions
+  - action: utter_proposition_modeles_sms_reunions
+- story: Proposition Modèles SMS Partenaires
+  steps:
+  - intent: proposition_modeles_sms_partenaires
+  - action: utter_proposition_modeles_sms_partenaires
+- story: Proposition Modèles SMS Fidélité
+  steps:
+  - intent: proposition_modeles_sms_fidelite
+  - action: utter_proposition_modeles_sms_fidelite
+- story: Proposition Modèles SMS Sous-DG
+  steps:
+  - intent: proposition_modeles_sms_sous_dg
+  - action: utter_proposition_modeles_sms_sous_dg
+- story: Proposition Modèles SMS Promotions
+  steps:
+  - intent: proposition_modeles_sms_promotions
+  - action: utter_proposition_modeles_sms_promotions
+- story: Proposition Modèles SMS Événements
+  steps:
+  - intent: proposition_modeles_sms_evenements
+  - action: utter_proposition_modeles_sms_evenements
+- story: Proposition Modèles SMS Rappels
+  steps:
+  - intent: proposition_modeles_sms_rappels
+  - action: utter_proposition_modeles_sms_rappels
+- story: Proposition Modèles SMS Remerciements
+  steps:
+  - intent: proposition_modeles_sms_remerciements
+  - action: utter_proposition_modeles_sms_remerciements
+- story: Proposition Modèles SMS Annonces
+  steps:
+  - intent: proposition_modeles_sms_annonces
+  - action: utter_proposition_modeles_sms_annonces
+- story: Proposition Modèles SMS Congés
+  steps:
+  - intent: proposition_modeles_sms_conges
+  - action: utter_proposition_modeles_sms_conges
+- story: Proposition Modèles SMS Urgences
+  steps:
+  - intent: proposition_modeles_sms_urgences
+  - action: utter_proposition_modeles_sms_urgences
+- story: Proposition Modèles SMS Bienvenue
+  steps:
+  - intent: proposition_modeles_sms_bienvenue
+  - action: utter_proposition_modeles_sms_bienvenue
+- story: Proposition Modèles SMS Remerciements Collaboration
+  steps:
+  - intent: proposition_modeles_sms_remerciements_collaboration
+  - action: utter_proposition_modeles_sms_remerciements_collaboration
+- story: Proposition Modèles SMS Anniversaire
+  steps:
+  - intent: proposition_modeles_sms_anniversaire
+  - action: utter_proposition_modeles_sms_anniversaire
+- story: Proposition Modèles SMS Lancements
+  steps:
+  - intent: proposition_modeles_sms_lancements
+  - action: utter_proposition_modeles_sms_lancements
+- story: Proposition Modèles SMS Feedback
+  steps:
+  - intent: proposition_modeles_sms_feedback
+  - action: utter_proposition_modeles_sms_feedback
+- story: Demande d'Importation de Contacts
+  steps:
+  - intent: demande_import_contacts
+  - action: utter_reponse_import_contacts  

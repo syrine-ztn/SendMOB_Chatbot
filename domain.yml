@@ -1,0 +1,238 @@
+version: "3.1"
+
+intents:
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - plateforme_sms
+  - acceder_transactions
+  - support_technique
+  - acceder_compte
+  - renouveler_paiement
+  - suivre_etat_envois
+  - assistance_supp
+  - proposition_modeles_sms
+  - proposition_modeles_sms_rh
+  - proposition_modeles_sms_reunions
+  - proposition_modeles_sms_partenaires
+  - proposition_modeles_sms_fidelite
+  - proposition_modeles_sms_sous_dg
+  - proposition_modeles_sms_promotions
+  - proposition_modeles_sms_evenements
+  - proposition_modeles_sms_rappels
+  - proposition_modeles_sms_remerciements
+  - proposition_modeles_sms_annonces
+  - proposition_modeles_sms_conges
+  - proposition_modeles_sms_urgences
+  - proposition_modeles_sms_bienvenue
+  - proposition_modeles_sms_remerciements_collaboration
+  - proposition_modeles_sms_anniversaire
+  - proposition_modeles_sms_lancements
+  - proposition_modeles_sms_feedback
+  - demande_import_contacts
+
+
+responses:
+
+  utter_cheer_up:
+  - text: "Je suis désolé d'entendre cela, j'espère que ça ira mieux pour vous bientôt."
+
+  utter_did_that_help:
+  - text: "Est-ce que cela vous a aidé ?"
+
+  utter_happy:
+  - text: "Super, continuez !"
+
+  utter_goodbye:
+  - text: "Au revoir"
+
+  utter_iamabot:
+  - text: "Salut! Je suis l'assistant de sendMob! Comment puis-je vous aider?"
+
+  utter_plateforme_sms:
+  - text: "Notre plateforme est conçue pour l'envoi de SMS exclusivement vers les numéros Mobilis."
+  utter_acceder_transactions:
+  - text: "Vous pouvez accéder à la page 'Transactions' à partir de votre tableau de bord. Vous y trouverez une liste de toutes vos transactions passées, y compris les détails de chaque transaction et les factures correspondantes."
+  utter_support_technique:
+  - text: "Si vous rencontrez un problème technique ou avez besoin d'aide, vous pouvez contacter notre équipe de support technique en appelant 888 ou contactant l'adresse RelationClients.ENTREPRISE@mobilis.dz. Notre équipe sera disponible pour vous aider et résoudre tout problème que vous pourriez rencontrer."
+  utter_acceder_compte:
+  - text: "Le processus d'inscription se fait manuellement chez Mobilis. Une fois inscrit, vous recevrez un mot de passe par e-mail que vous pourrez utiliser pour vous connecter directement à la plateforme en utilisant votre adresse e-mail et le mot de passe reçu."
+  utter_renouveler_paiement:
+  - text: "Pour renouveler votre paiement, vous pouvez accéder à la section 'Renouveler Paiement' et suivre les instructions fournies. Vous n'aurez pas besoin de sélectionner de montant ou de méthode de paiement car le renouvellement se fera automatiquement selon le plan choisi lors de l'inscription."
+  utter_suivre_etat_envois:
+  - text: "Vous pouvez suivre l'état de vos envois de SMS à partir de votre tableau de bord. Vous y trouverez des informations sur chaque envoi, mais veuillez noter que la plateforme ne fournit pas de détails sur la livraison des messages."
+  utter_assistance_supp:
+  - text: "Si vous avez besoin d'assistance supplémentaire, vous pouvez contacter notre équipe d'assistance clientèle RelationClients.ENTREPRISE@mobilis.dz ou via le numéro : 0660 600 888. Notre équipe sera heureuse de vous aider et de répondre à toutes vos questions."
+  utter_proposition_modeles_sms:
+  - text: "Voici quelques modèles de SMS en général :
+            1. 'Découvrez nos nouvelles offres ! Visitez notre site pour plus de détails.'
+            2. 'Profitez de 20% de réduction sur votre prochaine commande avec le code PROMO20.'
+            3. 'Rejoignez-nous pour notre vente flash ce week-end et économisez jusqu'à 50% !'
+            4. 'Merci de votre fidélité ! Voici un code de réduction exclusive : VIPCLIENT.'
+            5. 'Nouveau produit disponible ! Commandez maintenant et bénéficiez de la livraison gratuite.'
+            6. 'Restez informé de nos dernières promotions en vous inscrivant à notre newsletter.'"
+  utter_proposition_modeles_sms_rh:
+  - text: "Voici quelques modèles de SMS pour le département RH :
+            1. 'Bonjour [Nom], nous vous informons que votre candidature pour le poste de [poste] a été retenue. Merci de nous contacter pour plus de détails.'
+            2. 'Chers collaborateurs, n'oubliez pas la réunion RH ce vendredi à 10h. Votre présence est importante.'
+            3. 'Félicitations [Nom] pour votre promotion à [poste]. Votre travail acharné a porté ses fruits !'
+            4. 'Nous vous rappelons que la formation obligatoire sur [sujet] se tiendra le [date].'
+            5. 'Merci de remplir le sondage de satisfaction RH que vous trouverez à ce lien [lien].'
+            6. 'Bonjour [Nom], votre demande de congé a été approuvée. Bon repos !'"
+
+  utter_proposition_modeles_sms_reunions:
+  - text: "Voici quelques modèles de SMS pour des réunions :
+            1. 'Bonjour, nous vous rappelons la réunion de projet ce jeudi à 14h. Merci d'être à l'heure.'
+            2. 'N'oubliez pas notre réunion d'équipe demain à 9h. Ordre du jour : [sujet].'
+            3. 'Réunion de service ce mercredi à 10h dans la salle de conférence. Votre présence est indispensable.'
+            4. 'Bonjour, une réunion urgente est planifiée pour aujourd'hui à 15h. Merci de vous rendre disponible.'
+            5. 'Chers collègues, la réunion mensuelle se tiendra le [date] à [heure].'
+            6. 'Rappel : Réunion avec le client [Nom] demain à 11h. Préparez vos présentations.'"
+
+  utter_proposition_modeles_sms_partenaires:
+  - text: "Voici quelques modèles de SMS pour des partenaires :
+            1. 'Bonjour [Nom], nous sommes ravis de notre partenariat et aimerions organiser une réunion pour discuter des prochaines étapes.'
+            2. 'Cher partenaire, veuillez trouver ci-joint notre rapport mensuel. Nous sommes disponibles pour en discuter à votre convenance.'
+            3. 'Bonjour, un événement de networking est prévu le [date] à [lieu]. Nous serions honorés de votre présence.'
+            4. 'Chers partenaires, nous lançons un nouveau produit le [date]. Contactez-nous pour plus d'informations.'
+            5. 'Bonjour [Nom], nous vous remercions pour votre soutien continu. Nous aimerions planifier une réunion pour évaluer notre collaboration.'
+            6. 'Cher partenaire, n'oubliez pas notre rendez-vous le [date] à [heure]. À bientôt.'"
+
+  utter_proposition_modeles_sms_fidelite:
+  - text: "Voici quelques modèles de SMS pour la fidélisation des clients :
+            1. 'Bonjour [Nom], merci de votre fidélité ! Profitez de [pourcentage]% de réduction sur votre prochaine commande avec le code [code].'
+            2. 'Cher client, pour vous remercier de votre fidélité, nous vous offrons une livraison gratuite sur votre prochain achat.'
+            3. 'Bonjour, en tant que client fidèle, vous bénéficiez d'une offre exclusive : [détails de l'offre].'
+            4. 'Merci [Nom] pour votre fidélité ! Découvrez nos nouveaux produits et profitez de réductions spéciales.'
+            5. 'Cher client, votre fidélité compte pour nous. Utilisez le code [code] pour obtenir un cadeau surprise lors de votre prochaine visite.'
+            6. 'Bonjour [Nom], pour vous remercier de votre fidélité, bénéficiez d'un accès prioritaire à nos ventes privées.'"
+
+  utter_proposition_modeles_sms_sous_dg:
+  - text: "Voici quelques modèles de SMS pour le sous-directeur général :
+            1. 'Bonjour [Nom], pourriez-vous confirmer votre disponibilité pour la réunion du [date] ? Merci.'
+            2. 'Chère équipe, le sous-DG souhaite vous rencontrer pour discuter des projets en cours. Rendez-vous le [date] à [heure].'
+            3. 'Bonjour [Nom], veuillez trouver ci-joint le rapport demandé par le sous-DG.'
+            4. 'Bonjour [Nom], merci de préparer la présentation pour la réunion avec le sous-DG prévue le [date].'
+            5. 'Cher [Nom], le sous-DG vous invite à un déjeuner de travail le [date] à [lieu].'
+            6. 'Bonjour, le sous-DG rappelle la réunion de bilan trimestriel demain à 14h. Merci de votre présence.'"
+
+  utter_proposition_modeles_sms_promotions:
+  - text: "Voici quelques modèles de SMS pour des promotions :
+            1. 'Bonjour [Nom], profitez de notre offre spéciale : [détails de l'offre]. Valable jusqu'au [date].'
+            2. 'Cher client, nos soldes d'été sont là ! Jusqu'à -50% sur une sélection d'articles.'
+            3. 'Ne manquez pas notre promotion exclusive : [détails]. Offre valable jusqu'à épuisement des stocks.'
+            4. 'Bonjour, bénéficiez de [pourcentage]% de réduction sur votre prochain achat avec le code [code].'
+            5. 'Chère cliente, nos promotions de fin de saison commencent aujourd'hui. Venez vite en profiter !'
+            6. 'Profitez de notre offre spéciale : 2 achetés, le 3ème offert sur tous nos produits !'"
+
+  utter_proposition_modeles_sms_evenements:
+  - text: "Voici quelques modèles de SMS pour des événements :
+            1. 'Bonjour [Nom], nous avons le plaisir de vous inviter à notre événement annuel le [date] à [lieu].'
+            2. 'Cher client, rejoignez-nous pour notre soirée VIP le [date]. Répondez à ce SMS pour confirmer votre présence.'
+            3. 'Bonjour, ne manquez pas notre événement spécial : [détails]. Rendez-vous le [date] à [heure].'
+            4. 'Chers partenaires, nous organisons un cocktail de réseautage le [date]. Merci de confirmer votre participation.'
+            5. 'Invitation : Participez à notre atelier exclusif le [date] à [lieu]. Inscriptions obligatoires.'
+            6. 'Nous vous attendons nombreux à notre conférence sur [sujet] le [date]. Inscrivez-vous dès maintenant !'"
+
+  utter_proposition_modeles_sms_rappels:
+  - text: "Voici quelques modèles de SMS pour des rappels :
+            1. 'Bonjour [Nom], nous vous rappelons votre rendez-vous chez [entreprise] le [date] à [heure].'
+            2. 'Cher client, n'oubliez pas de régler votre facture avant le [date]. Merci.'
+            3. 'Bonjour, ce message est pour vous rappeler notre réunion demain à [heure].'
+            4. 'Cher [Nom], pensez à renouveler votre abonnement avant le [date] pour éviter toute interruption de service.'
+            5. 'Rappel : Votre prochain paiement est dû le [date]. Merci de votre ponctualité.'
+            6. 'Bonjour, nous vous rappelons votre rendez-vous médical chez [docteur] le [date] à [heure].'"
+
+  utter_proposition_modeles_sms_remerciements:
+  - text: "Voici quelques modèles de SMS pour des remerciements :
+            1. 'Bonjour [Nom], nous vous remercions pour votre achat chez [entreprise]. Nous espérons vous revoir bientôt !'
+            2. 'Cher client, merci de votre confiance. Votre satisfaction est notre priorité.'
+            3. 'Bonjour, merci pour votre participation à notre événement. Nous espérons vous revoir lors de notre prochaine édition.'
+            4. 'Merci [Nom] pour votre fidélité. Nous sommes ravis de vous compter parmi nos clients.'
+            5. 'Bonjour, un grand merci pour votre recommandation. Votre soutien est précieux pour nous.'
+            6. 'Cher [Nom], merci de votre collaboration. Nous apprécions votre partenariat.'"
+
+  utter_proposition_modeles_sms_annonces:
+  - text: "Voici quelques modèles de SMS pour des annonces :
+            1. 'Bonjour, nous avons le plaisir de vous annoncer le lancement de notre nouveau produit : [nom du produit].'
+            2. 'Cher client, nous ouvrons un nouveau magasin près de chez vous ! Rendez-nous visite à partir du [date].'
+            3. 'Bonjour, nous avons une grande nouvelle : [détail de l'annonce]. Restez à l'écoute pour plus d'informations.'
+            4. 'Chère équipe, nous avons le plaisir de vous annoncer l'arrivée de [Nom] au poste de [poste].'
+            5. 'Cher client, une mise à jour importante de notre service est prévue pour le [date].'
+            6. 'Bonjour, nous avons le plaisir de vous informer que [entreprise] a remporté le prix [nom du prix].'"
+
+  utter_proposition_modeles_sms_conges:
+  - text: "Voici quelques modèles de SMS pour annoncer des congés :
+            1. 'Bonjour, nous vous informons que nos bureaux seront fermés pour congés annuels du [date] au [date].'
+            2. 'Chers clients, [entreprise] sera en congé du [date] au [date]. Merci de votre compréhension.'
+            3. 'Bonjour, notre équipe sera en congé du [date] au [date]. Nous serons de retour pour vous servir le [date].'
+            4. 'Chère équipe, n'oubliez pas de planifier vos congés pour la période estivale. Merci de soumettre vos demandes avant le [date].'
+            5. 'Cher [Nom], votre demande de congé du [date] au [date] a été approuvée. Bonnes vacances !'
+            6. 'Bonjour, en raison des congés d'été, notre service client sera réduit du [date] au [date]. Merci de votre compréhension.'"
+
+  utter_proposition_modeles_sms_urgences:
+  - text: "Voici quelques modèles de SMS pour des situations d'urgence :
+            1. 'Alerte : Suite à [événement], nous vous demandons de rester à l'intérieur jusqu'à nouvel ordre.'
+            2. 'Urgence : Veuillez évacuer les lieux immédiatement et suivre les instructions des autorités.'
+            3. 'Alerte : Une coupure de courant est prévue à [heure] aujourd'hui. Veuillez prendre vos précautions.'
+            4. 'Urgence : En raison de [événement], nos services seront interrompus temporairement. Merci de votre compréhension.'
+            5. 'Alerte : Une situation d'urgence est en cours à [lieu]. Veuillez éviter la zone et suivre les consignes de sécurité.'
+            6. 'Urgence : Nous rencontrons des problèmes techniques. Nos équipes travaillent à une résolution rapide.'"
+
+  utter_proposition_modeles_sms_bienvenue:
+  - text: "Voici quelques modèles de SMS pour souhaiter la bienvenue :
+            1. 'Bonjour [Nom], bienvenue chez [entreprise] ! Nous sommes ravis de vous compter parmi nos clients.'
+            2. 'Chère [Nom], bienvenue dans notre équipe ! Nous sommes impatients de travailler avec vous.'
+            3. 'Bonjour [Nom], merci de rejoindre notre communauté. Profitez de [offre de bienvenue].'
+            4. 'Bienvenue [Nom] ! Nous vous remercions pour votre inscription. Découvrez nos services sur [lien].'
+            5. 'Bonjour, bienvenue chez [entreprise]. Nous espérons que vous apprécierez nos produits et services.'
+            6. 'Cher [Nom], bienvenue ! Nous sommes heureux de vous accueillir et restons à votre disposition pour toute question.'"
+
+  utter_proposition_modeles_sms_remerciements_collaboration:
+  - text: "Voici quelques modèles de SMS pour remercier pour une collaboration :
+            1. 'Bonjour [Nom], merci pour votre précieuse collaboration sur le projet [nom du projet].'
+            2. 'Cher [Nom], nous vous remercions pour votre soutien et votre collaboration continue.'
+            3. 'Bonjour, un grand merci pour votre contribution à notre projet. Nous apprécions votre dévouement.'
+            4. 'Cher partenaire, merci pour cette collaboration fructueuse. Nous espérons continuer à travailler ensemble.'
+            5. 'Merci [Nom] pour votre engagement et votre collaboration. Votre travail est très apprécié.'
+            6. 'Bonjour [Nom], nous vous remercions pour votre partenariat. Votre collaboration est essentielle pour nous.'"
+
+  utter_proposition_modeles_sms_anniversaire:
+  - text: "Voici quelques modèles de SMS pour souhaiter un anniversaire :
+            1. 'Joyeux anniversaire [Nom] ! Toute l'équipe de [entreprise] vous souhaite une merveilleuse journée.'
+            2. 'Cher [Nom], nous vous souhaitons un très joyeux anniversaire ! Profitez de cette journée spéciale.'
+            3. 'Bonjour [Nom], toute notre équipe vous souhaite un excellent anniversaire. Que cette année vous apporte bonheur et succès.'
+            4. 'Joyeux anniversaire [Nom] ! En tant que client fidèle, bénéficiez de [offre spéciale] aujourd'hui.'
+            5. 'Cher [Nom], nous vous souhaitons un joyeux anniversaire ! Merci de faire partie de notre communauté.'
+            6. 'Bon anniversaire [Nom] ! Profitez de [offre] en cette journée spéciale.'"
+
+  utter_proposition_modeles_sms_lancements:
+  - text: "Voici quelques modèles de SMS pour des lancements de produit :
+            1. 'Bonjour [Nom], nous sommes heureux de vous annoncer le lancement de notre nouveau produit : [nom du produit].'
+            2. 'Cher client, découvrez notre dernière innovation : [nom du produit]. Disponible dès maintenant !'
+            3. 'Bonjour, ne manquez pas le lancement de notre nouveau service le [date]. Plus d'infos sur [lien].'
+            4. 'Chers clients, notre nouveau produit [nom] est enfin disponible ! Profitez de [offre spéciale] pour le lancement.'
+            5. 'Bonjour [Nom], rejoignez-nous pour le lancement de [nom du produit] le [date] à [lieu].'
+            6. 'Découvrez notre nouveauté : [nom du produit]. Disponible dès aujourd'hui en magasin et en ligne.'"
+
+  utter_proposition_modeles_sms_feedback:
+  - text: "Voici quelques modèles de SMS pour demander des feedbacks :
+            1. 'Bonjour [Nom], pourriez-vous prendre quelques minutes pour évaluer votre expérience avec notre service ?'
+            2. 'Cher client, nous aimerions connaître votre avis sur notre dernier produit. Merci de remplir ce court sondage : [lien].'
+            3. 'Bonjour, votre avis compte pour nous ! Merci de nous donner votre feedback sur [produit/service].'
+            4. 'Chers clients, nous apprécions vos retours. Partagez votre expérience avec nous ici : [lien].'
+            5. 'Bonjour [Nom], comment évalueriez-vous votre dernière interaction avec notre équipe ?'
+            6. 'Cher [Nom], votre feedback est précieux. Merci de nous dire ce que vous pensez de notre nouveau service.'"
+  utter_reponse_import_contacts:
+  - text: "Pour importer une liste de contacts sous format CSV, veuillez suivre ces étapes :
+            1. Allez dans le menu 'Contacts' de votre application.
+            2. Cliquez sur l'option 'Importer une liste des contacts'.
+            3. Sélectionnez le fichier CSV que vous souhaitez importer.
+            4. Suivez les instructions à l'écran pour finaliser l'importation."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
